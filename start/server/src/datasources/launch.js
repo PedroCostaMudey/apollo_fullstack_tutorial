@@ -20,8 +20,8 @@ class LaunchAPI extends RESTDataSource{
       cursor: `${launch.launch_date_unix}`,
       site: launch.launch_site && launch.launch_site.site_name,
       mission: {
-        name: launch.mission.name,
-        missonPatchSmall: launch.links.mission_patch_small,
+        name: launch.mission_name,
+        missionPatchSmall: launch.links.mission_patch_small,
         missionPatchLarge: launch.links.mission_patch,
       },
       rocket: {
@@ -29,7 +29,7 @@ class LaunchAPI extends RESTDataSource{
         name: launch.rocket.rocket_name,
         type: launch.rocket.rocket_type,
       },
-    }
+    };
   }
 
 
