@@ -4,6 +4,7 @@ import { lighten } from 'polished';
 import { unit, colors } from '../styles';
 
 const height = 50;
+
 export default styled('button')({
   display: 'block',
   minWidth: 200,
